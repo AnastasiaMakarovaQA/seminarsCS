@@ -16,12 +16,17 @@
     //Console.WriteLine("false");
 //}
 
+//Console.Write("Введите число: ");
+//int num = Convert.ToInt32(Console.ReadLine());
+//int min = -num;
+//while (min <= num)
+//{
+ //   Console.Write(min + " ");
+//    min++;
+//}
+
 Console.Write("Введите число: ");
 int num = Convert.ToInt32(Console.ReadLine());
-int min = -num;
-while (min <= num)
-{
-    Console.Write(min + " ");
-    min++;
-}
+int res = num % 10;
+Console.Write(res);
 
