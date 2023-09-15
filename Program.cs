@@ -18,11 +18,10 @@
 
 Console.Write("Введите число: ");
 int num = Convert.ToInt32(Console.ReadLine());
-int min = 0;
-while (min < num)
+int min = -num;
+while (min <= num)
 {
     Console.Write(min + " ");
     min++;
-    
 }
 
