@@ -202,3 +202,136 @@
 
 // newText = Replace(newText, 'с', 'С');
 // Console.WriteLine(newText);
+
+// int Quat (int x, int y)
+// {
+//     if (x > 0 && y > 0)
+//     {
+//         return 1;
+//     }
+//     else if (x > 0 && y < 0)
+//     {
+//         return 4;
+//     }
+//     else if (x < 0 && y > 0)
+//     {
+//         return 2;
+//     }
+//     else 
+//     {
+//         return 3;
+//     }
+// }
+
+// Console.WriteLine("Enter x point: ");
+// int x = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Enter y point: ");
+// int y = Convert.ToInt32(Console.ReadLine());
+
+// if (x!=0 && y!=0){
+//     int quater = Quat(x,y);
+//     Console.WriteLine($"the number of quater is {quater}");
+
+// }
+// else{
+//     Console.WriteLine($"the number is not on quater");
+// }
+
+// double Dist(int x1, int y1, int x2, int y2){
+//     int x = x2 - x1;
+//     int y = y2 - y1;
+//     double res = Math.Round(Math.Sqrt(x * x + y * y),3);
+//     return res;
+// }
+// Console.WriteLine("Enter x1 point: ");
+// int x1 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Enter y1 point: ");
+// int y1 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Enter x2 point: ");
+// int x2 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Enter y2 point: ");
+// int y2 = Convert.ToInt32(Console.ReadLine());
+
+// Console.WriteLine($"Distance between points is {Dist(x1, y1, x2, y2)}");
+
+// void Square(int num){
+//     for (int i = 1; i <= num; i++){
+// Console.Write($"{i * i} ");
+//     }
+// }
+// Console.WriteLine("Enter a number: ");
+// int numb = Convert.ToInt32(Console.ReadLine());
+// if(numb < 0){
+// numb *= (-1);
+// }
+// else if (numb == 0){
+//     Console.WriteLine("Wrong number");
+// }
+// Square(numb);
+
+//1.2321   123.21
+
+
+
+// bool Pal(int num){
+   
+// int num1 = num / 10000; //1
+// int num5 = num % 10; //1
+// int num2 = num / 1000 - num1 * 10; //2 
+// int num4 = num % 100 / 10; //2
+// if (num <10000 || num > 99999){
+//         Console.WriteLine("Error");
+//     }
+// if (num1 == num5 && num2 == num4){
+    
+//     Console.WriteLine("true");
+//     return true;
+// }
+// else {
+//     Console.WriteLine("false");
+//     return false;
+// }
+// }
+
+// Console.WriteLine("Enter 5 character number: ");
+// int numb = Convert.ToInt32(Console.ReadLine());
+// Pal(numb);
+
+
+// void Square(int num){
+//     for (int i = 1; i <= num; i++){
+// Console.WriteLine($"{i * i * i} ");
+//     }
+// }
+// Console.Write("N = ");
+// int numb = Convert.ToInt32(Console.ReadLine());
+// if(numb < 0){
+// numb *= (-1);
+// }
+// else if (numb == 0){
+//     Console.WriteLine("Wrong number");
+// }
+// Square(numb);
+
+double Dist(int x1, int x2, int x3, int y1, int y2, int y3){
+    int x = y1 - x1;
+    int y = y2 - x2;
+    int z = y3 - x3;
+    double res = Math.Round(Math.Sqrt(x * x + y * y + z * z),2);
+    return res;
+}
+Console.WriteLine("Enter x1 point: ");
+int x1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter x2 point: ");
+int x2 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter x3 point: ");
+int x3 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter y1 point: ");
+int y1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter y2 point: ");
+int y2 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter y3 point: ");
+int y3 = Convert.ToInt32(Console.ReadLine());
+
+
+Console.WriteLine($"Distance between points is {Dist(x1, x2, x3, y1, y2, y3)}");
