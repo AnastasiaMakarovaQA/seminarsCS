@@ -1,0 +1,30 @@
+C:\Users\Anastasiya\Desktop\папки\C#_seminars\task\bin\Debug\net6.0\task.exe
+C:\Users\Anastasiya\Desktop\папки\C#_seminars\task\bin\Debug\net6.0\task.deps.json
+C:\Users\Anastasiya\Desktop\папки\C#_seminars\task\bin\Debug\net6.0\task.runtimeconfig.json
+C:\Users\Anastasiya\Desktop\папки\C#_seminars\task\bin\Debug\net6.0\task.dll
+C:\Users\Anastasiya\Desktop\папки\C#_seminars\task\bin\Debug\net6.0\task.pdb
+C:\Users\Anastasiya\Desktop\папки\C#_seminars\task\obj\Debug\net6.0\task.csproj.AssemblyReference.cache
+C:\Users\Anastasiya\Desktop\папки\C#_seminars\task\obj\Debug\net6.0\task.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Anastasiya\Desktop\папки\C#_seminars\task\obj\Debug\net6.0\task.AssemblyInfoInputs.cache
+C:\Users\Anastasiya\Desktop\папки\C#_seminars\task\obj\Debug\net6.0\task.AssemblyInfo.cs
+C:\Users\Anastasiya\Desktop\папки\C#_seminars\task\obj\Debug\net6.0\task.csproj.CoreCompileInputs.cache
+C:\Users\Anastasiya\Desktop\папки\C#_seminars\task\obj\Debug\net6.0\task.dll
+C:\Users\Anastasiya\Desktop\папки\C#_seminars\task\obj\Debug\net6.0\refint\task.dll
+C:\Users\Anastasiya\Desktop\папки\C#_seminars\task\obj\Debug\net6.0\task.pdb
+C:\Users\Anastasiya\Desktop\папки\C#_seminars\task\obj\Debug\net6.0\task.genruntimeconfig.cache
+C:\Users\Anastasiya\Desktop\папки\C#_seminars\task\obj\Debug\net6.0\ref\task.dll
+D:\папки и доки\C#_seminars\task\bin\Debug\net6.0\task.exe
+D:\папки и доки\C#_seminars\task\bin\Debug\net6.0\task.deps.json
+D:\папки и доки\C#_seminars\task\bin\Debug\net6.0\task.runtimeconfig.json
+D:\папки и доки\C#_seminars\task\bin\Debug\net6.0\task.dll
+D:\папки и доки\C#_seminars\task\bin\Debug\net6.0\task.pdb
+D:\папки и доки\C#_seminars\task\obj\Debug\net6.0\task.csproj.AssemblyReference.cache
+D:\папки и доки\C#_seminars\task\obj\Debug\net6.0\task.GeneratedMSBuildEditorConfig.editorconfig
+D:\папки и доки\C#_seminars\task\obj\Debug\net6.0\task.AssemblyInfoInputs.cache
+D:\папки и доки\C#_seminars\task\obj\Debug\net6.0\task.AssemblyInfo.cs
+D:\папки и доки\C#_seminars\task\obj\Debug\net6.0\task.csproj.CoreCompileInputs.cache
+D:\папки и доки\C#_seminars\task\obj\Debug\net6.0\task.dll
+D:\папки и доки\C#_seminars\task\obj\Debug\net6.0\refint\task.dll
+D:\папки и доки\C#_seminars\task\obj\Debug\net6.0\task.pdb
+D:\папки и доки\C#_seminars\task\obj\Debug\net6.0\task.genruntimeconfig.cache
+D:\папки и доки\C#_seminars\task\obj\Debug\net6.0\ref\task.dll
