@@ -274,7 +274,7 @@
 
 
 // bool Pal(int num){
-   
+
 // int num1 = num / 10000; //1
 // int num5 = num % 10; //1
 // int num2 = num / 1000 - num1 * 10; //2 
@@ -283,7 +283,7 @@
 //         Console.WriteLine("Error");
 //     }
 // if (num1 == num5 && num2 == num4){
-    
+
 //     Console.WriteLine("true");
 //     return true;
 // }
@@ -313,25 +313,93 @@
 // }
 // Square(numb);
 
-double Dist(int x1, int x2, int x3, int y1, int y2, int y3){
-    int x = y1 - x1;
-    int y = y2 - x2;
-    int z = y3 - x3;
-    double res = Math.Round(Math.Sqrt(x * x + y * y + z * z),2);
-    return res;
+// double Dist(int x1, int x2, int x3, int y1, int y2, int y3){
+//     int x = y1 - x1;
+//     int y = y2 - x2;
+//     int z = y3 - x3;
+//     double res = Math.Round(Math.Sqrt(x * x + y * y + z * z),2);
+//     return res;
+// }
+// Console.WriteLine("Enter x1 point: ");
+// int x1 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Enter x2 point: ");
+// int x2 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Enter x3 point: ");
+// int x3 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Enter y1 point: ");
+// int y1 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Enter y2 point: ");
+// int y2 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Enter y3 point: ");
+// int y3 = Convert.ToInt32(Console.ReadLine());
+
+
+// Console.WriteLine($"Distance between points is {Dist(x1, x2, x3, y1, y2, y3)}");
+
+// Напиши программу, которая на вход принимает число (А) и выдает сумму чисел от 1 до А.
+// using System.IO.Compression;
+
+// void SumNumb(int numb){
+// int res = 0;
+// for (int i = 0; i <=numb; i++)
+// {
+//  res += i;   
+// }
+// Console.WriteLine($"Your sum from 1 to {numb} is {res}");
+// }
+
+// Console.WriteLine("Enter your number: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+// SumNumb(num);
+
+// void NumInDec(int numb){
+//     int count = 0;
+//     while (numb!= 0){
+//         numb/= 10;
+//         count++;
+//     }
+//     Console.WriteLine($"Count of number is {count}");
+// }
+// Console.WriteLine("Enter your number: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+// NumInDec(num);
+
+// напишите программу, которая на вход принимает число N и выдвет произведение от 1 до N.
+// void Fact(int n){
+//     if (n == 1){
+//         Console.WriteLine($"Your composition is 1");
+//     }
+//     else {
+//         double res = 1;
+//         for (int i = 1; i <= n; i++){
+//             res *= i;
+//         }
+//         Console.WriteLine($"Your composition is {res}");
+//     }
+// }
+// Console.WriteLine("Enter your number: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+// Fact(num);
+
+// Напишите программу, которая выводит массив из 8 элементов, заполненный 0 и 1 в случайном порядке
+
+int[] CreateNewArray()
+{
+    int[] array = new int[8];
+    for (int i = 0; i < 8; i++)
+    {
+        array[i] = new Random().Next(0, 2);
+    }
+    return array;
 }
-Console.WriteLine("Enter x1 point: ");
-int x1 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Enter x2 point: ");
-int x2 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Enter x3 point: ");
-int x3 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Enter y1 point: ");
-int y1 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Enter y2 point: ");
-int y2 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Enter y3 point: ");
-int y3 = Convert.ToInt32(Console.ReadLine());
 
-
-Console.WriteLine($"Distance between points is {Dist(x1, x2, x3, y1, y2, y3)}");
+void ShowArray(int[] array)
+{
+    Console.Write("[");
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write(array[i] + " ");
+    }
+    Console.Write("]");
+}
+ShowArray(CreateNewArray());
