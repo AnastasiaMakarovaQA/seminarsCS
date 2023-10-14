@@ -659,3 +659,181 @@
 //     Console.WriteLine($"Triangle is impossible.");
 // }
 
+
+// Метод для двумерных массивов
+// int [,] Create2dArray(int min, int max, int row, int col){
+//     int [,] array = new int [row, col];
+//     for (int i = 0; i < row; i++)
+//     {
+//      for (int j = 0; j < col; j++)
+//      {
+//         array[i,j] = new Random().Next(min, max+1);
+//      }   
+//     }
+//     return array;
+// }
+
+// void Show2dArray(int [,] array){
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < array.GetLength(1); j++)
+//         {
+//             Console.Write($"{array[i,j]} ");
+//         }
+//         Console.WriteLine();
+//     }
+// }
+
+// Console.WriteLine("Enter number of rows in array: ");
+// int row = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Enter number of colums in array: ");
+// int col = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Enter min value in array: ");
+// int min = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Enter max value in array: ");
+// int max = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine();
+
+// int [,] array = Create2dArray(min, max, row, col);
+// Show2dArray(array);
+
+
+// Задача 48: Задайте двумерный массив размера m на n,
+// каждый элемент в массиве находится по формуле: Aₘₙ = m+n. Выведите полученный массив на экран.
+
+// int [,] Create2dArrayWithIndex(int row, int col){
+//     int [,] array = new int [row, col];
+//     for (int i = 0; i < row; i++)
+//     {
+//         for (int j = 0; j < col; j++)
+//         {
+//             array[i,j] = i + j;
+//         }
+//     }
+//     return array;
+// }
+
+// void Show2dArray(int [,] array){
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < array.GetLength(1); j++)
+//         {
+//             Console.Write($"{array[i,j]} ");
+//         }
+//         Console.WriteLine();
+//     }
+// }
+
+// Console.WriteLine("Enter number of rows in array: ");
+// int row = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Enter number of colums in array: ");
+// int col = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Enter min value in array: ");
+// int min = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Enter max value in array: ");
+// int max = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine();
+
+// int [,] array = Create2dArrayWithIndex(row, col);
+// Show2dArray(array);
+
+
+// Задача 49: Задайте двумерный массив. Найдите элементы, у которых оба индекса чётные, 
+// и замените эти элементы на их квадраты.
+
+// int [,] Create2dArray(int min, int max, int row, int col){
+//     int [,] array = new int [row, col];
+//     for (int i = 0; i < row; i++)
+//     {
+//      for (int j = 0; j < col; j++)
+//      {
+//         array[i,j] = new Random().Next(min, max+1);
+//      }   
+//     }
+//     return array;
+// }
+
+// void Show2dArray(int [,] array){
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < array.GetLength(1); j++)
+//         {
+//             Console.Write($"{array[i,j]} ");
+//         }
+//         Console.WriteLine();
+//     }
+// }
+
+// int [,] ChangeArray(int [,] array){
+//     for (int i = 0; i < array.GetLength(0); i=+2)
+//     {
+//         for (int j = 0; j < array.GetLength(1); j=+2)
+//         {
+//             array[i,j] *= array[i,j];
+//         }
+//          Console.WriteLine();
+//     }
+//     return array;
+// }
+
+// Console.WriteLine("Enter number of rows in array: ");
+// int row = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Enter number of colums in array: ");
+// int col = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Enter min value in array: ");
+// int min = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Enter max value in array: ");
+// int max = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine();
+
+// int [,] array = Create2dArray(min, max, row, col);
+// Show2dArray(array);
+// Console.WriteLine();
+// int [,] changedArr = ChangeArray(array);
+// Show2dArray(changedArr);
+// Console.WriteLine();
+// Show2dArray(array);
+
+// Задайте значение N. Напишите программу, которая выдает все натуральные числа из промежутка от 1 до N
+
+// void ShowNumbers(int n){
+//     if (n>1){
+//         ShowNumbers(n-1);
+//     }
+//     Console.Write($"{n} ");
+// }
+
+// ShowNumbers(5);
+
+//найдите значения M и N. Напишите программу, которая выведет все натуральные числа от M до N
+
+// void ShowValuesRec(int n, int m){
+//     if (Math.Max(m,n) != Math.Min(m,n)){
+//         ShowValuesRec(Math.Max(n,m), Math.Min(m,n)+1);
+//     }
+//         Console.Write($"{Math.Min(m,n)} ");
+// }
+
+// Console.WriteLine("Enter n numb: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Enter m numb: ");
+// int m = Convert.ToInt32(Console.ReadLine());
+
+// ShowValuesRec(Math.Min(n,m), Math.Max(n,m));
+
+int SumDigits(int n)
+{
+    n = Math.Abs(n);
+    if(n>10)
+    {
+        return SumDigits(n / 10) + n % 10;
+    }
+    else
+    {
+        return n;
+    }
+}
+
+Console.WriteLine("Enter M numb");
+int M = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine($"Sum of digits of number {M} is {SumDigits(M)}.");
